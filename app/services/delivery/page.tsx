@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Prescription Delivery in Tarpon Springs | Anclote Pharmacy',
   description:
     'Ask about prescription delivery from Anclote Pharmacy in Tarpon Springs. Refill coordination, medication packaging and local support. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/delivery',
+  },
 }
 
 const deliverySteps = [

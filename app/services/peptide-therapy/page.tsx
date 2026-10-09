@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Peptide Therapy Support in Tarpon Springs | Anclote Pharmacy',
   description:
     'Pharmacist support for provider-prescribed peptide therapy in Tarpon Springs. Medication review, counseling and care coordination. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/peptide-therapy',
+  },
 }
 
 const supportItems = [

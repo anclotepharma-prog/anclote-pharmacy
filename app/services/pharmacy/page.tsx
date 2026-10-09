@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Prescription Services in Tarpon Springs | Anclote Pharmacy',
   description:
     'Fill or transfer prescriptions at Anclote Pharmacy in Tarpon Springs. Fast turnaround, competitive pricing, personal service. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/pharmacy',
+  },
 }
 
 const transferSteps = [

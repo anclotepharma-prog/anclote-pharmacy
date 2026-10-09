@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Immunizations and Flu Shots in Tarpon Springs | Anclote Pharmacy',
   description:
     'Flu, shingles, COVID and travel vaccines in Tarpon Springs. Walk-ins welcome, most insurance accepted. Call 727-944-5800.',
+  alternates: {
+    canonical: '/immunizations',
+  },
 }
 
 const vaccineFaqs = [

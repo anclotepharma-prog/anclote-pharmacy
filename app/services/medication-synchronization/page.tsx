@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Medication Synchronization | Anclote Pharmacy Tarpon Springs',
   description:
     'Align all your prescription refills to one monthly pickup date. Fewer trips, no missed doses. Tarpon Springs. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/medication-synchronization',
+  },
 }
 
 const faqs = [

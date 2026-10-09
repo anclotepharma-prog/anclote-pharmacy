@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Medical Weight Loss Support in Tarpon Springs | Anclote Pharmacy',
   description:
     'Pharmacist-guided medical weight loss support in Tarpon Springs. Medication counseling, adherence help and care coordination. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/medical-weight-loss',
+  },
 }
 
 const supportAreas = [
