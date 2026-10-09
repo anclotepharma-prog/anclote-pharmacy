@@ -1,3 +1,11 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/terms',
+  },
+}
+
 export default function TermsPage() {
   return (
     <>
@@ -86,7 +94,7 @@ export default function TermsPage() {
                 <p>1933 N Pinellas Ave</p>
                 <p>Tarpon Springs, FL 34689</p>
                 <p>Phone: (727) 944-5800</p>
-                <p>Email: info@anclotepharmacy.com</p>
+                <p>Email: info@anclotepharma.com</p>
               </div>
             </div>
           </div>
