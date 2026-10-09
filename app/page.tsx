@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: 'Independent Pharmacy in Tarpon Springs, FL | Anclote Pharmacy',
   description:
     'Locally owned pharmacy serving Tarpon Springs since 2012. Prescriptions, immunizations, medical equipment and Medicare support. Call 727-944-5800.',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 const benefits = [

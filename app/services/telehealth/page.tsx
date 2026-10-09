@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Telehealth Doctor Support in Tarpon Springs | Anclote Pharmacy',
   description:
     'Telehealth support for Tarpon Springs patients. Connect with a provider, coordinate prescriptions and get pharmacist follow-up. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/telehealth',
+  },
 }
 
 const supportSteps = [
