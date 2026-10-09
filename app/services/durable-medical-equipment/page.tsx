@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Durable Medical Equipment in Tarpon Springs | Anclote Pharmacy',
   description:
     'Wheelchairs, walkers, CPAP supplies and diabetic supplies in Tarpon Springs. Insurance billing and fitting help. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/durable-medical-equipment',
+  },
 }
 
 const faqs = [

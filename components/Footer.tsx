@@ -25,11 +25,11 @@ const Footer = () => {
                 <span>(727) 944-5800</span>
               </a>
               <a
-                href="mailto:info@anclotepharmacy.com"
+                href="mailto:info@anclotepharma.com"
                 className="inline-flex items-center gap-2 transition-colors hover:text-white"
               >
                 <Mail className="h-4 w-4 text-primary-300" />
-                <span>info@anclotepharmacy.com</span>
+                <span>info@anclotepharma.com</span>
               </a>
             </div>
           </div>

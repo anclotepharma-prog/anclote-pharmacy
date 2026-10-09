@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'LiveScan Fingerprinting Services | Tarpon Springs, FL',
   description:
     'AHCA, FDLE and FD-258 fingerprinting in Tarpon Springs. Fast electronic submission for healthcare and employment screening. Call 727-944-5800.',
+  alternates: {
+    canonical: '/livescan',
+  },
 }
 
 const faqs = [

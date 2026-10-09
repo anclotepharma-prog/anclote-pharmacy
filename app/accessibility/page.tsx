@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import { CheckCircle, Mail, Phone } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/accessibility',
+  },
+}
+
 export default function AccessibilityPage() {
   return (
     <>
@@ -132,8 +140,8 @@ export default function AccessibilityPage() {
                   <Mail className="w-6 h-6 text-primary-600 mr-3 mt-0.5" />
                   <div>
                     <p className="font-semibold text-slate-950">Email</p>
-                    <a href="mailto:info@anclotepharmacy.com" className="text-primary-600 hover:text-primary-700">
-                      info@anclotepharmacy.com
+                    <a href="mailto:info@anclotepharma.com" className="text-primary-600 hover:text-primary-700">
+                      info@anclotepharma.com
                     </a>
                   </div>
                 </div>

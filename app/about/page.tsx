@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'About Anclote Pharmacy | Family Owned in Tarpon Springs',
   description:
     'Family owned and operated in Tarpon Springs since 2012. Meet the pharmacists behind Anclote Pharmacy and see how we care for our community.',
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 const differentiators = [
