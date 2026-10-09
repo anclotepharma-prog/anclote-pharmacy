@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Pharmacy Serving Holiday, FL | Anclote Pharmacy',
   description:
     'Independent pharmacy near Holiday for prescriptions, transfers, immunizations, medical equipment, Medicare support and pharmacist care. Call 727-944-5800.',
+  alternates: {
+    canonical: '/locations/holiday',
+  },
 }
 
 const services = [

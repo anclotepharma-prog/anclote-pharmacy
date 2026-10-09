@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Pharmacy Serving Palm Harbor, FL | Anclote Pharmacy',
   description:
     'Independent pharmacy near Palm Harbor for prescriptions, transfers, durable medical equipment, flu shots, Medicare support and LiveScan. Call 727-944-5800.',
+  alternates: {
+    canonical: '/locations/palm-harbor',
+  },
 }
 
 const services = [

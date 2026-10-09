@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Long Term Care Pharmacy Services | Tarpon Springs, FL',
   description:
     'Pharmacy services for assisted living and care facilities in Tarpon Springs. Unit dose packaging, delivery and 24/7 support. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/long-term-care',
+  },
 }
 
 const onboardingSteps = [

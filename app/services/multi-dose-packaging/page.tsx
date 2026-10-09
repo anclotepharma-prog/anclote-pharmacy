@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Multi-Dose Medication Packaging | Tarpon Springs, FL',
   description:
     'Pre-sorted medication packets by date and time. Simplify daily dosing for seniors in Tarpon Springs. Call 727-944-5800 to get started.',
+  alternates: {
+    canonical: '/services/multi-dose-packaging',
+  },
 }
 
 const steps = [

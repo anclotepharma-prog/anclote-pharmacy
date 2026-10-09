@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Medication Therapy Management | Tarpon Springs Pharmacy',
   description:
     'One-on-one pharmacist review of your medications. Catch interactions, cut costs and simplify your routine. Tarpon Springs. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/medication-therapy-management',
+  },
 }
 
 const benefits = [

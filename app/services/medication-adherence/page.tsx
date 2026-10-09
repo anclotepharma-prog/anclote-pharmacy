@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Medication Adherence Programs | Tarpon Springs Pharmacy',
   description:
     'Stay on track with your medications. Reminders, synchronization and pharmacist monitoring for seniors in Tarpon Springs. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/medication-adherence',
+  },
 }
 
 const audiences = [

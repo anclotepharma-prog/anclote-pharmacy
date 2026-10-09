@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Medicare Open Enrollment Help | Tarpon Springs Pharmacy',
   description:
     'Free Medicare Part D plan reviews in Tarpon Springs. Compare plans and check drug coverage before you enroll. Call 727-944-5800.',
+  alternates: {
+    canonical: '/services/medicare-open-enrollment',
+  },
 }
 
 const whatToBring = [
