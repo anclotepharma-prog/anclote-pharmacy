@@ -84,7 +84,7 @@ const faqSchema = {
       name: 'Do I need a requisition or special paperwork?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. Serum tears are not FDA regulated, so no requisition is required — just a prescription from your doctor.',
+        text: 'No. Serum tears are not FDA regulated, so no requisition is required for concentrations up to 30% — just call us to get started.',
       },
     },
     {
@@ -123,7 +123,7 @@ const faqSchema = {
 }
 
 const howItWorks = [
-  'Your doctor writes a prescription for autologous serum tears',
+  'No prescription needed for up to 30% serum tears — just call us to get started',
   'You come in for a simple blood draw — drink plenty of water beforehand',
   'Your blood is processed into sterile eye drops at the prescribed concentration',
   'Pick up your drops in a cooler with an ice pack, with clear storage instructions',
@@ -173,7 +173,7 @@ const faqs = [
   {
     question: 'Do I need a requisition or special paperwork?',
     answer:
-      'No. Serum tears are not FDA regulated, so no requisition is required — just a prescription from your doctor.',
+      'No. Serum tears are not FDA regulated, so no requisition is required for concentrations up to 30% — just call us to get started.',
   },
   {
     question: 'What if my serum tears stop working?',
@@ -279,7 +279,7 @@ export default function SerumTearsPage() {
               </div>
               <p className="mt-6 body-copy">
                 No requisition or special paperwork is needed — serum tears are not FDA regulated,
-                so all it takes is a prescription from your doctor.
+                so no prescription is required for concentrations up to 30%.
               </p>
             </div>
 
@@ -303,7 +303,14 @@ export default function SerumTearsPage() {
                   Questions about serum tears, your prescription, storage, or refills? Call us —
                   we will walk you through it.
                 </p>
-                <a href="tel:727-944-5800" className="btn-secondary gap-2">
+<p className="mt-4 text-lg font-semibold text-white">
+  
+
+                 Call today for your price on a 6-month supply.</p>
+  .
+             
+            
+  <a href="tel:727-944-5800" className="btn-secondary gap-2">
                   <Phone className="mr-2 h-5 w-5" />
                   Call 727-944-5800
                 </a>
