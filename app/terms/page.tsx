@@ -94,7 +94,7 @@ export default function TermsPage() {
                 <p>1933 N Pinellas Ave</p>
                 <p>Tarpon Springs, FL 34689</p>
                 <p>Phone: (727) 944-5800</p>
-                <p>Email: info@anclotepharma.com</p>
+                <p>Email: anclotepharma@gmail.com</p>
               </div>
             </div>
           </div>
