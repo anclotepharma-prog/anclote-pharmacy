@@ -92,7 +92,7 @@ const faqSchema = {
       name: 'What if my serum tears stop working?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor. It is very possible that you might have moderate to severe dry eye issues. Let us know and explain your experience with us so we can guide you to better solutions.',
+        text: 'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor. It is very possible that you might have moderate to severe dry eye issues. Let us know and explain your experience with us so we can guide you to better solutions. You might have moderate to severe dry eyes and that is why you need a higher percentage of your serum tears. We do make 50%, 70%, 80% and 100% serum tears.',
       },
     },
     {
@@ -100,7 +100,7 @@ const faqSchema = {
       name: 'Should I stop my other eye drops?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ask your doctor. Do not stop any prescribed drops on your own — your doctor will tell you what to continue and what to taper.',
+        text: 'Ask your doctor. Do not stop any prescribed drops on your own — your doctor will tell you what to continue and what to taper. Yes — most patients can stop the majority of their over-the-counter (OTC) lubricant eye drops, such as Refresh, Systane, and similar brands. Confirm with your doctor first.',
       },
     },
     {
@@ -178,12 +178,12 @@ const faqs = [
   {
     question: 'What if my serum tears stop working?',
     answer:
-      'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor. It is very possible that you might have moderate to severe dry eye issues. Let us know and explain your experience with us so we can guide you to better solutions.',
+      'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor. It is very possible that you might have moderate to severe dry eye issues. Let us know and explain your experience with us so we can guide you to better solutions. You might have moderate to severe dry eyes and that is why you need a higher percentage of your serum tears. We do make 50%, 70%, 80% and 100% serum tears.',
   },
   {
     question: 'Should I stop my other eye drops?',
     answer:
-      'Ask your doctor. Do not stop any prescribed drops on your own — your doctor will tell you what to continue and what to taper.',
+      'Ask your doctor. Do not stop any prescribed drops on your own — your doctor will tell you what to continue and what to taper. Yes — most patients can stop the majority of their over-the-counter (OTC) lubricant eye drops, such as Refresh, Systane, and similar brands. Confirm with your doctor first.',
   },
   {
     question: 'Are there side effects?',
