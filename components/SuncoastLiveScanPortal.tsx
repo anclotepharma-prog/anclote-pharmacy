@@ -320,7 +320,7 @@ const buildMailto = (
     `Notes: ${details.notes || 'None'}`,
   ].join('\n')
 
-  return `mailto:info@anclotepharma.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  return `mailto:anclotepharma@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
 
 const timeSlots = [
