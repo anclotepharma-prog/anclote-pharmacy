@@ -92,7 +92,7 @@ const faqSchema = {
       name: 'What if my serum tears stop working?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor.',
+        text: 'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor. It is very possible that you might have moderate to severe dry eye issues. Let us know and explain your experience with us so we can guide you to better solutions.',
       },
     },
     {
@@ -178,7 +178,7 @@ const faqs = [
   {
     question: 'What if my serum tears stop working?',
     answer:
-      'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor.',
+      'There are usually three causes: the drops have degraded (check storage and dates), your condition has changed, or something else is irritating your eyes. Call us and we will help you sort through it with your doctor. It is very possible that you might have moderate to severe dry eye issues. Let us know and explain your experience with us so we can guide you to better solutions.',
   },
   {
     question: 'Should I stop my other eye drops?',
