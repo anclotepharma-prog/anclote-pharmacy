@@ -86,8 +86,8 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-primary-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1 text-slate-950">Email</h3>
-                    <a href="mailto:info@anclotepharma.com" className="text-primary-600 hover:text-primary-700">
-                      info@anclotepharma.com
+                    <a href="mailto:anclotepharma@gmail.com" className="text-primary-600 hover:text-primary-700">
+                      anclotepharma@gmail.com
                     </a>
                   </div>
                 </div>
