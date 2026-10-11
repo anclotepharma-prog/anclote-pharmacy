@@ -68,7 +68,7 @@ const faqSchema = {
       name: 'What concentration are the drops?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A typical concentration is 20 to 30 percent. Your doctor decides what is right for your condition.',
+        text: 'A typical concentration is 20 to 30 percent. For moderate to severe dry eyes — and extremely severe cases — we make higher concentrations such as 50%, 70%, 80%, and 100%. We always confirm with your doctor that the concentration is right for your condition.',
       },
     },
     {
@@ -163,7 +163,7 @@ const faqs = [
   {
     question: 'What concentration are the drops?',
     answer:
-      'A typical concentration is 20 to 30 percent. Your doctor decides what is right for your condition.',
+      'A typical concentration is 20 to 30 percent. For moderate to severe dry eyes — and extremely severe cases — we make higher concentrations such as 50%, 70%, 80%, and 100%. We always confirm with your doctor that the concentration is right for your condition.',
   },
   {
     question: 'Can I travel with serum tears?',
