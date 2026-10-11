@@ -11,6 +11,7 @@ const serviceLinks = [
   { href: '/services/medication-adherence', label: 'Medication Adherence', note: 'Simple routines and pharmacist guidance' },
   { href: '/services/durable-medical-equipment', label: 'Medical Equipment', note: 'Mobility, diabetic and respiratory supplies' },
   { href: '/services/medical-weight-loss', label: 'Medical Weight Loss', note: 'Provider-directed medication support' },
+  { href: '/services/serum-tears', label: 'Serum Tears', note: 'Custom serum eye drops for dry eye' },
   { href: '/services/peptide-therapy', label: 'Peptide Therapy', note: 'Counseling and prescription coordination' },
   { href: '/services/telehealth', label: 'Telehealth Support', note: 'Virtual care connected to local follow-up' },
   { href: '/services/medication-therapy-management', label: 'Medication Reviews', note: 'One-on-one therapy management' },
