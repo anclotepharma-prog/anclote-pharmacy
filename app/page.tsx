@@ -7,6 +7,7 @@ import {
   Check,
   CheckCircle2,
   Clock3,
+  Droplets,
   Fingerprint,
   HeartHandshake,
   MapPin,
@@ -69,6 +70,7 @@ const services = [
   { href: '/immunizations', title: 'Immunizations', icon: Syringe },
   { href: '/services/durable-medical-equipment', title: 'Medical equipment', icon: Stethoscope },
   { href: '/services/medical-weight-loss', title: 'Medical weight loss', icon: HeartHandshake },
+  { href: '/services/serum-tears', title: 'Serum tears', icon: Droplets },
   { href: '/services/telehealth', title: 'Telehealth support', icon: UserRound },
   { href: '/services/long-term-care', title: 'Long-term care', icon: UsersRound },
 ]
