@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
-import { CheckCircle, ClipboardList, HeartPulse, Phone, Scale, Shield } from 'lucide-react'
+import { CheckCircle, ClipboardList, HeartPulse, Phone, Scale, Shield, Globe, CalendarCheck } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Medical Weight Loss Support in Tarpon Springs | Anclote Pharmacy',
@@ -9,6 +10,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/services/medical-weight-loss',
   },
+}
+
+const DR_SHAH = {
+  name: 'Dr. Kinchit Shah',
+  credentials: 'MD, FACP',
+  title: 'Board-Certified Internal Medicine',
+  clinic: 'Shreeji Clinic',
+  phone: '336-310-6667',
+  phoneHref: 'tel:+13363106667',
+  website: 'https://www.kinchitshahmd.com',
+  websiteLabel: 'www.kinchitshahmd.com',
+  photo: '/images/dr-kinchit-shah.jpg',
 }
 
 const supportAreas = [
@@ -50,6 +63,62 @@ export default function MedicalWeightLossPage() {
               including medication counseling, safety checks, refill coordination, and practical
               follow-through.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Dr. Kinchit Shah */}
+      <section className="content-section !py-0">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-5xl">
+            <div className="card overflow-hidden">
+              <div className="grid gap-8 md:grid-cols-[280px_minmax(0,1fr)] items-center">
+                <div className="relative mx-auto w-full max-w-[280px]">
+                  <Image
+                    src={DR_SHAH.photo}
+                    alt="Dr. Kinchit Shah, MD, FACP"
+                    width={560}
+                    height={920}
+                    className="rounded-2xl object-cover"
+                    priority
+                  />
+                </div>
+                <div>
+                  <div className="page-eyebrow">Your weight loss physician</div>
+                  <h2 className="compact-title">
+                    {DR_SHAH.name}, {DR_SHAH.credentials}
+                  </h2>
+                  <p className="body-copy mt-1 font-semibold text-slate-800">
+                    {DR_SHAH.title} · {DR_SHAH.clinic}
+                  </p>
+                  <p className="body-copy mt-4">
+                    Medical weight loss starts with the right physician. Dr. Shah provides
+                    physician-led medical weight management — evaluation, prescribing, and
+                    follow-up care — while our pharmacy team supports you with medication
+                    counseling, safety checks, and refill coordination.
+                  </p>
+                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                    <a href={DR_SHAH.phoneHref} className="btn-primary gap-2">
+                      <Phone className="h-5 w-5" />
+                      Call {DR_SHAH.phone}
+                    </a>
+                    <a
+                      href={DR_SHAH.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary gap-2"
+                    >
+                      <CalendarCheck className="h-5 w-5" />
+                      Book at {DR_SHAH.websiteLabel}
+                    </a>
+                  </div>
+                  <p className="mt-4 flex items-center gap-2 text-sm text-slate-500">
+                    <Globe className="h-4 w-4" />
+                    To make an appointment, call {DR_SHAH.phone} or visit {DR_SHAH.websiteLabel}.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
