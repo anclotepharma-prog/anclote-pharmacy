@@ -243,7 +243,7 @@ export default function SerumTearsPage() {
                 <p className="body-copy">
                   Doctors prescribe serum tears for severe or chronic dry eye — when over-the-counter
                   drops and prescription drops like Restasis or Xiidra have not been enough. They
-                  are commonly used for dry eye after LASIK, graft-versus-host disease, Sjogren's
+                  are commonly used for dry eye after LASIK, graft-versus-host disease, Sjogren&apos;s
                   syndrome, and other conditions where the eye surface needs more than lubrication.
                   There are no known side effects, since the drops are made from your own blood.
                 </p>
