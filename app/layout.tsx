@@ -5,6 +5,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import FlyerPopup from '@/components/FlyerPopup'
 
 const bodyFont = Source_Sans_3({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <FlyerPopup />
       </body>
     </html>
   )
