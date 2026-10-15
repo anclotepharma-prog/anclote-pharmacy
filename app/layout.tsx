@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.anclotepharma.com'),
   title: 'Anclote Pharmacy',
   description: 'Independent pharmacy serving Tarpon Springs, FL with prescriptions, immunizations, medical equipment, and Medicare support.',
+  verification: {
+    google: 'FfTMVrmXtHRl6GrkNqaAFAtCpT4qNJ3IB6Tga4kiLYc',
+  },
 }
 
 const pharmacySchema = {
