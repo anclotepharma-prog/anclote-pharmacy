@@ -286,12 +286,8 @@ const emptyBookingDetails: BookingDetails = {
   notes: '',
 }
 
-const pricingByOriCode: Record<string, number> = {
-  EDOH4420Z: 85,
-  EDOEVR100: 75,
-  FL924360Z: 80,
-  FL921700Z: 80,
-}
+const PRICE_WITH_PHOTO = 120
+const PRICE_WITHOUT_PHOTO = 95
 
 const buildMailto = (
   selectedService: LiveScanService,
@@ -374,7 +370,7 @@ export default function SuncoastLiveScanPortal() {
   const [paymentError, setPaymentError] = useState('')
   const [paymentComplete, setPaymentComplete] = useState(false)
   const [paymentTransactionId, setPaymentTransactionId] = useState('')
-  const priceAmount = selectedOri?.code ? pricingByOriCode[selectedOri.code] ?? 65 : 65
+const priceAmount = selectedOri?.title.includes('(with Photo)') ? PRICE_WITH_PHOTO : PRICE_WITHOUT_PHOTO
 
   const mailtoUrl = useMemo(() => {
     if (!selectedService) return ''
