@@ -6,7 +6,7 @@ import { Award, CheckCircle, Heart, Target } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'About Anclote Pharmacy | Family Owned in Tarpon Springs',
   description:
-    'Family owned and operated in Tarpon Springs since 2012. Meet the pharmacists behind Anclote Pharmacy and see how we care for our community.',
+    'Family owned and operated in Tarpon Springs since 2010. Meet the pharmacists behind Anclote Pharmacy and see how we care for our community.',
   alternates: {
     canonical: '/about',
   },
@@ -25,7 +25,7 @@ export default function AboutPage() {
         <div className="container relative z-10 mx-auto px-4">
           <div className="max-w-4xl">
             <div className="page-eyebrow">
-              Family Owned Since 2012
+              Family Owned Since 2010
             </div>
             <h1 className="page-heading">
               About Anclote Pharmacy - Family Owned in Tarpon Springs
@@ -45,7 +45,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="mb-6 text-3xl font-semibold text-slate-950">Our Story</h2>
                 <p className="text-lg leading-8 text-slate-600">
-                  Anclote Pharmacy opened in Tarpon Springs in 2012 with a straightforward idea: a
+                  Anclote Pharmacy opened in Tarpon Springs in 2010 with a straightforward idea: a
                   pharmacy should know its patients. We are family owned and independently operated,
                   which means decisions get made here, not at a corporate office three states away.
                   Over a decade later, we still fill prescriptions for the families who walked in
