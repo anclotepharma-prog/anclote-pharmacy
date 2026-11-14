@@ -1,13 +1,14 @@
 'use client'
 
-import { useState } from 'react'
-import { Star, Send, MapPin } from 'lucide-react'
+import { Star, MapPin, PenLine } from 'lucide-react'
 
 const GOOGLE_MAPS_URL =
   'https://www.google.com/maps/place/ANCLOTE+PHARMACY/@28.1719632,-82.7525798,17z/data=!3m1!4b1!4m6!3m5!1s0x88c28d96a4e79589:0x7b388278d8c0c0d7!8m2!3d28.1719632!4d-82.7525798!16s%2Fg%2F11b7grqh8_?entry=ttu'
 
+const GOOGLE_REVIEW_URL = 'https://g.page/r/CdfAwNh4gjh7EAE/review'
+
 const RATING = 4.8
-const REVIEW_COUNT = 128
+const REVIEW_COUNT = 142
 
 const featuredReviews = [
   {
@@ -30,6 +31,10 @@ const featuredReviews = [
     name: 'Justin Amos',
     text: 'Wonderful customer service, very polite and professional.',
   },
+  {
+    name: 'Miguel Arencibia',
+    text: 'Excellent services!!!!',
+  },
 ]
 
 const ratingSchema = {
@@ -49,6 +54,16 @@ const ratingSchema = {
   })),
 }
 
+type GtagWindow = Window & { gtag?: (...args: unknown[]) => void }
+
+function trackEvent(eventName: string) {
+  if (typeof window === 'undefined') return
+  const gtag = (window as GtagWindow).gtag
+  if (typeof gtag === 'function') {
+    gtag('event', eventName)
+  }
+}
+
 function Stars({ size = 'h-5 w-5' }: { size?: string }) {
   return (
     <div className="flex gap-0.5" aria-label="5 out of 5 stars">
@@ -60,26 +75,6 @@ function Stars({ size = 'h-5 w-5' }: { size?: string }) {
 }
 
 export default function ReviewsPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    rating: '5',
-    review: ''
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    alert('Thank you for your review! We appreciate your feedback.')
-    setFormData({ name: '', email: '', rating: '5', review: '' })
-  }
-
   return (
     <>
       <script
@@ -132,6 +127,7 @@ export default function ReviewsPage() {
                   href={GOOGLE_MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackEvent('read_all_reviews_click')}
                   className="btn-secondary mt-6 gap-2"
                 >
                   <MapPin className="h-5 w-5" />
@@ -143,111 +139,28 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      {/* Review Form */}
+      {/* Write a Google Review */}
       <section className="muted-band">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="section-title text-center">Share Your Experience</h2>
-            <p className="mx-auto mb-10 max-w-2xl text-center body-copy">
-              Had a good visit? Tell us about it below — or leave us a Google review so
-              others can find us.
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="section-title">Share Your Experience</h2>
+            <p className="mx-auto mb-10 max-w-2xl body-copy">
+              Had a good visit? A Google review takes less than a minute — and it is the
+              fastest way to help others find us.
             </p>
-            <div className="card mb-12">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="form-label">
-                      Your Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="form-control"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="form-label">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="form-control"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="rating" className="form-label">
-                    Rating *
-                  </label>
-                  <select
-                    id="rating"
-                    name="rating"
-                    value={formData.rating}
-                    onChange={handleChange}
-                    required
-                    className="form-control"
-                  >
-                    <option value="5">(5 stars)</option>
-                    <option value="4">(4 stars)</option>
-                    <option value="3">(3 stars)</option>
-                    <option value="2">(2 stars)</option>
-                    <option value="1">(1 star)</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="review" className="form-label">
-                    Your Review *
-                  </label>
-                  <textarea
-                    id="review"
-                    name="review"
-                    value={formData.review}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="form-control"
-                    placeholder="Tell us about your experience..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full btn-primary flex items-center justify-center"
-                >
-                  <Send className="w-5 h-5 mr-2" />
-                  Submit Review
-                </button>
-              </form>
-            </div>
-
-            {/* External Review Links */}
-            <div className="card tint-panel">
-              <h3 className="text-xl font-semibold mb-4 text-slate-950">Leave a Review on Google</h3>
-              <p className="body-copy mb-6">
-                The fastest way to help others find us is a Google review — it takes less than a minute.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={GOOGLE_MAPS_URL}
-                  className="btn-secondary text-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Review Us on Google
-                </a>
-              </div>
-            </div>
+            <a
+              href={GOOGLE_REVIEW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent('write_google_review_click')}
+              className="btn-primary inline-flex items-center justify-center gap-2"
+            >
+              <PenLine className="h-5 w-5" />
+              Write a Google Review
+            </a>
+            <p className="mt-6 text-sm text-slate-500">
+              You will be taken to Google to post your review.
+            </p>
           </div>
         </div>
       </section>
