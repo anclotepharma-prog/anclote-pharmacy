@@ -57,7 +57,7 @@ export default function Header() {
           >
             <MapPin className="h-3.5 w-3.5" /> Tarpon Springs, Florida
           </a>
-          <span className="text-primary-100 sm:hidden">Local since 2012</span>
+          <span className="text-primary-100 sm:hidden">Local since 2010</span>
         </div>
       </div>
 
