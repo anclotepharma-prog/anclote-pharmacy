@@ -11,7 +11,7 @@ Your Anclote Pharmacy website has been completely redesigned with unique, modern
 - **Hero Section with Background Image & Floating Elements**
   - Added animated floating blob decorations
   - Background image overlay with pharmacy interior
-  - Badge indicator "Serving Tarpon Springs Since 2012"
+  - Badge indicator "Serving Tarpon Springs Since 2010"
   - Improved button hover effects with scale animations
 
 - **Health Image Section - Redesigned**
