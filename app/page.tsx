@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Independent Pharmacy in Tarpon Springs, FL | Anclote Pharmacy',
   description:
-    'Locally owned pharmacy serving Tarpon Springs since 2012. Prescriptions, immunizations, medical equipment and Medicare support. Call 727-944-5800.',
+    'Locally owned pharmacy serving Tarpon Springs since 2010. Prescriptions, immunizations, medical equipment and Medicare support. Call 727-944-5800.',
   alternates: {
     canonical: '/',
   },
@@ -112,7 +112,7 @@ export default function Home() {
         <div className="container mx-auto grid min-h-[650px] items-center gap-10 px-4 py-14 lg:grid-cols-[minmax(0,0.9fr)_minmax(460px,1.1fr)] lg:py-16">
           <div className="relative z-10 max-w-2xl">
             <div className="mb-5 text-sm font-bold uppercase tracking-[0.16em] text-primary-700">
-              Independent pharmacy care since 2012
+              Independent pharmacy care since 2010
             </div>
             <h1 className="font-display text-5xl font-extrabold leading-[0.98] tracking-[-0.05em] text-[#14243b] sm:text-6xl lg:text-7xl">
               Your health, made simpler.
