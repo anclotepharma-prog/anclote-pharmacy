@@ -108,7 +108,7 @@ const testimonials = [
 export default function Home() {
   return (
     <>
-      <section className="overflow-hidden bg-[#f1f7f4]">
+      <div className="bg-[#fff4dc] px-4 py-3 text-center text-sm font-semibold text-[#14243b]">Thanksgiving Hours: We will be closed on Thursday, November 26 and Friday, November 27 for the Thanksgiving holiday.</div><section className="overflow-hidden bg-[#f1f7f4]">
         <div className="container mx-auto grid min-h-[650px] items-center gap-10 px-4 py-14 lg:grid-cols-[minmax(0,0.9fr)_minmax(460px,1.1fr)] lg:py-16">
           <div className="relative z-10 max-w-2xl">
             <div className="mb-5 text-sm font-bold uppercase tracking-[0.16em] text-primary-700">
@@ -411,7 +411,7 @@ export default function Home() {
           </div>
           <div className="rounded-2xl bg-[#f1f7f4] p-7">
             <div className="flex items-start gap-4"><MapPin className="mt-1 h-6 w-6 shrink-0 text-primary-700" /><div><p className="font-bold text-[#14243b]">1933 N Pinellas Ave</p><p className="text-slate-600">Tarpon Springs, FL 34689</p></div></div>
-            <div className="mt-5 flex items-start gap-4"><Clock3 className="mt-1 h-6 w-6 shrink-0 text-primary-700" /><div><p className="font-bold text-[#14243b]">Monday-Friday</p><p className="text-slate-600">9:00am-5:00pm</p></div></div>
+            <div className="mt-5 flex items-start gap-4"><Clock3 className="mt-1 h-6 w-6 shrink-0 text-primary-700" /><div><p className="font-bold text-[#14243b]">Monday-Friday</p><p className="text-slate-600">9:00am-5:00pm</p><p className="mt-2 text-sm font-semibold text-[#14243b]">Thanksgiving Hours: We will be closed on Thursday, November 26 and Friday, November 27 for the Thanksgiving holiday.</p></div></div>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row"><a href="https://maps.google.com/?q=1933+N+Pinellas+Ave+Tarpon+Springs+FL+34689" target="_blank" rel="noreferrer" className="btn-primary flex-1">Get Directions</a><a href="tel:727-944-5800" className="btn-secondary flex-1">Call the Pharmacy</a></div>
           </div>
         </div>
